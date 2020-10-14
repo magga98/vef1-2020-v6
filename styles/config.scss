@@ -1,3 +1,70 @@
-// Hér eiga að vera stillingar með scss breytum fyrir:
-// grid, max-width á síðu, transitions,
-// liti, margin-bottom gildi sem eru sameiginleg
+.grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.grid .col{
+  align-items: stretch;
+  word-break: break-word;
+}
+
+.col-12{
+  width: 100%;
+}
+.col-6{
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+.offset-3{
+  margin-left: 25%;
+}
+
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+  min-width: 160px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: #cccccc;
+
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.col-3{
+  width: 25%;
+}
+.col-4{
+  width: 33.333333333%;
+}
+.col-1 {
+  width: 8.333333333%;
+}
+
+.offset-col-1 {
+  margin-left: 8.333333333%;
+}
+@media (min_width: 800px){
+  .col-md-12{
+    width: 50%;
+  }
+}
+@media (max_width: 500px){
+  .col-sm-12{
+    width: 100%;
+  }
+}

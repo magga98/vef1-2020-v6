@@ -1,0 +1,24 @@
+{
+  "name": "verkefni6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "browser-sync": "browser-sync --server --files \"*\"",
+    "sass": "node-sass styles.scss styles.css",
+    "dev": "concurrently npm:sass npm:browser-sync",
+    "lint": "stylelint styles.css ./**/*.scss",
+    "lint-scss": "stylelint styles.scss --syntax scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.7.2",
+    "stylelint-config-sass-guidelines": "^7.1.0"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
